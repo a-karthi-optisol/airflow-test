@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		436766AE02A897AF2D86975B /* Pods_airflow_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F3015A1FB92B3FD5E14CD07 /* Pods_airflow_test.framework */; };
 		8BF6C19A2C819E8F0046DAA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF6C1992C819E8F0046DAA3 /* AppDelegate.swift */; };
 		8BF6C19C2C819E8F0046DAA3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF6C19B2C819E8F0046DAA3 /* SceneDelegate.swift */; };
 		8BF6C19E2C819E8F0046DAA3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF6C19D2C819E8F0046DAA3 /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		38551D3D03DA94493B989A5E /* Pods-airflow-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-airflow-test.debug.xcconfig"; path = "Target Support Files/Pods-airflow-test/Pods-airflow-test.debug.xcconfig"; sourceTree = "<group>"; };
+		7F3015A1FB92B3FD5E14CD07 /* Pods_airflow_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_airflow_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BF6C1962C819E8F0046DAA3 /* airflow-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "airflow-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BF6C1992C819E8F0046DAA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BF6C19B2C819E8F0046DAA3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		8BF6C1A22C819E920046DAA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BF6C1A52C819E920046DAA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8BF6C1A72C819E920046DAA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0B36BD6C0A920FB68FC538F /* Pods-airflow-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-airflow-test.release.xcconfig"; path = "Target Support Files/Pods-airflow-test/Pods-airflow-test.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				436766AE02A897AF2D86975B /* Pods_airflow_test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16CD76F89507EA47CF9C32F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F3015A1FB92B3FD5E14CD07 /* Pods_airflow_test.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		396B1E2DE95D74F5E160397B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				38551D3D03DA94493B989A5E /* Pods-airflow-test.debug.xcconfig */,
+				B0B36BD6C0A920FB68FC538F /* Pods-airflow-test.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8BF6C18D2C819E8F0046DAA3 = {
 			isa = PBXGroup;
 			children = (
 				8BF6C1982C819E8F0046DAA3 /* airflow-test */,
 				8BF6C1972C819E8F0046DAA3 /* Products */,
+				396B1E2DE95D74F5E160397B /* Pods */,
+				16CD76F89507EA47CF9C32F6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +99,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8BF6C1AA2C819E920046DAA3 /* Build configuration list for PBXNativeTarget "airflow-test" */;
 			buildPhases = (
+				913C028BC564F03B86E0E5BA /* [CP] Check Pods Manifest.lock */,
 				8BF6C1922C819E8F0046DAA3 /* Sources */,
 				8BF6C1932C819E8F0046DAA3 /* Frameworks */,
 				8BF6C1942C819E8F0046DAA3 /* Resources */,
@@ -132,6 +158,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		913C028BC564F03B86E0E5BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-airflow-test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8BF6C1922C819E8F0046DAA3 /* Sources */ = {
@@ -287,12 +338,15 @@
 		};
 		8BF6C1AB2C819E920046DAA3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38551D3D03DA94493B989A5E /* Pods-airflow-test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = J8G8DUU33R;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = J8G8DUU33R;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "airflow-test/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -305,8 +359,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.obs.airflow-test";
+				PRODUCT_BUNDLE_IDENTIFIER = com.obs.virtualtape;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Virtual Tape Dev Profile";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -315,12 +371,15 @@
 		};
 		8BF6C1AC2C819E920046DAA3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0B36BD6C0A920FB68FC538F /* Pods-airflow-test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = J8G8DUU33R;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = J8G8DUU33R;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "airflow-test/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -333,8 +392,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.obs.airflow-test";
+				PRODUCT_BUNDLE_IDENTIFIER = com.obs.virtualtape;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Virtual Tape Dev Profile";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

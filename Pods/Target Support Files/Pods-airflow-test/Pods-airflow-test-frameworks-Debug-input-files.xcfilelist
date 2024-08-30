@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-airflow-test/Pods-airflow-test-frameworks.sh
+${PODS_ROOT}/ScanflowBarcode/ScanflowBarcode.framework
+${PODS_ROOT}/ScanflowCore/ScanflowCore.framework
